@@ -1,0 +1,117 @@
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.movie-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.movie-item {
+  max-width: 370px;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 15px;
+  text-align: center;
+  background-color: #848455;
+  border-radius: 10px;
+}
+.movie-img {
+  display: block;
+  max-width: 370px;
+  width: 100%;
+  height: 230px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.movie-title {
+  font-size: 24px;
+  line-height: 24px;
+  font-family:fantasy;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
+.imdb {
+  display: flex;
+  align-items: center;
+}
+.imdb::before {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  background-image: url("../images/star.png");
+  background-size: 12px 12px;
+  background-position: center center;
+  content: "";
+}
+.year {
+  display: flex;
+  align-items: center;
+}
+.year::before {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  background-image: url("../images/calendar.png");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+  content: "";
+}
+.hours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hours::before {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  background-image: url("../images/wall-clock.png");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+  content: "";
+}
+.genre {
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #fff;
+  background-color: rgb(90, 120, 150);
+  border-radius: 8px;
+}
+.more-info {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 100px;
+  padding-left: 100px;
+  text-decoration: none;
+  color: #fff;
+  background-color: green;
+  border-radius: 8px;
+}
+.movie-select {
+  width: 200px;
+}
+#js-select {
+  width: 300px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
