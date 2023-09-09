@@ -2,9 +2,9 @@ var elForm = document.querySelector(".js-form");
 var elInput = elForm.querySelector(".js-input");
 var elMoviesList = document.querySelector(".js-movies-list");
 var elMovieSelect = document.querySelector("#js-select");
-var movieFragment = new DocumentFragment();
 function moviesCardCreating(arr){
   
+  var movieFragment = new DocumentFragment();
   elMoviesList.innerHTML = "";
   for (const movie of arr) {
 
@@ -45,8 +45,8 @@ function moviesCardCreating(arr){
       return `${hour} hrs ${minut} min`
     }; 
   }
+  elMoviesList.appendChild(movieFragment);
 }
-elMoviesList.appendChild(movieFragment);
 
 function selectFunc(){
   var newArr = [];
