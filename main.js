@@ -2,10 +2,10 @@ var elForm = document.querySelector(".js-form");
 var elInput = elForm.querySelector(".js-input");
 var elMoviesList = document.querySelector(".js-movies-list");
 var elMovieSelect = document.querySelector("#js-select");
+var movieFragment = new DocumentFragment();
 function moviesCardCreating(arr){
-
+  
   elMoviesList.innerHTML = "";
-
   for (const movie of arr) {
 
 
@@ -33,18 +33,20 @@ function moviesCardCreating(arr){
     elMovieRuntime.textContent = movie.runtime;
     elMovieCategory.textContent = movie.Categories;
     elMovieLink.textContent = "More info...";
-    
+
+
+    elMovieItem.append(elMovieImg, elMovieTitle, elMovieImdbRating, elMovieYear, getTime(movie.runtime), elMovieCategory, elMovieLink);
+    movieFragment.appendChild(elMovieItem);
     function getTime(time) {
       
       var hour = Math.floor(time / 60)
       var minut = Math.floor(time % 60)
       
       return `${hour} hrs ${minut} min`
-    };
-    elMovieItem.append(elMovieImg, elMovieTitle, elMovieImdbRating, elMovieYear, getTime(movie.runtime), elMovieCategory, elMovieLink);
-    elMoviesList.appendChild(elMovieItem);
+    }; 
   }
 }
+elMoviesList.appendChild(movieFragment);
 
 function selectFunc(){
   var newArr = [];

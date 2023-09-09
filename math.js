@@ -1,4 +1,4 @@
-// ======= Convert minutes to sec ======== 
+// //======= Convert minutes to sec ======== 
 
 // function minsToSec(min) {
 
@@ -8,7 +8,7 @@
 // };
 // console.log(minsToSec());
 
-// ======= zero to the end of array ==========
+// //======= zero to the end of array ==========
 
 // var numbers = [1, 3, 0, 5, 0, 7, 0];
 // var result = [];
@@ -24,9 +24,9 @@
 //   }
 //   return result;
 // }
-// console.log(zeroEnd(numbers).join(" "));
+// console.log(zeroEnd(numbers).join(""));
 
-// ======== Math.abs add Math.abs function ========
+// //======== Math.abs add Math.abs function ========
 
 // var numbers = [1, 2, 0, -1, -2, 3, 4]
 // var arr = 0;
@@ -40,7 +40,7 @@
 // }
 // console.log(additionAbsNumbers(numbers));
 
-// ======= Count Boolean(true) =======
+// //======= Count Boolean(true) =======
 
 // var trueyType = [false, true, false, true, true];
 // var output = [];
@@ -55,10 +55,10 @@
 // console.log(countTrue(trueyType).length);
 
 
-// ======= Find Highest Price Name ========
+// //======= Find Highest Price Name ========
 
 // var list = [{name: "Ali", price:200},{name: "Jo'rabek", price: 800},{name: "Sardor", price: 400}];
-// var highestPriceName = ""
+// var highestPriceName = "";
 // var highestPrice = 0;
 // function findHighestPriceName(){
 //   for (const item of list) {
